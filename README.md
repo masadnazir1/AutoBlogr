@@ -128,19 +128,7 @@ cron.schedule("0 8,15 * * *", async () => {
 
 ---
 
-## Environment Variables
 
-| Variable               | Description                            |
-| ---------------------- | -------------------------------------- |
-| `PORT`                 | Server port (default: 3000)            |
-| `GOOGLE_CLIENT_ID`     | Google OAuth Client ID                 |
-| `GOOGLE_CLIENT_SECRET` | Google OAuth Client Secret             |
-| `GOOGLE_REDIRECT_URI`  | OAuth redirect URI                     |
-| `BLOGGER_BLOG_ID`      | Blogger Blog ID to post articles       |
-| `GEMINI_API_KEY`       | AI API key for blog content generation |
-| `UNSPLASH_ACCESS_KEY`  | Unsplash API key for image fetching    |
-
----
 
 ## License
 
