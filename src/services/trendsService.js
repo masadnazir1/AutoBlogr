@@ -37,6 +37,11 @@ export async function getTrendingKeywords() {
       if (keyword && !data.includes(keyword)) data.push(keyword);
     }
 
+    console.log(`
+      ==================TREND SERVICE DONE ====================
+      ==                  ${data?.length}                    ==
+      ==================TREND SERVICE DONE ====================
+      `);
     return data;
   });
 

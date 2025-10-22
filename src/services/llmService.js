@@ -25,6 +25,8 @@ export async function generateBlogContent(
   blogTopic = "latest technology trends",
   imageUrl = ""
 ) {
+  console.log("blogTopic", blogTopic, imageUrl);
+
   const prompt = `
 You are an expert SEO content writer.
 
@@ -65,6 +67,8 @@ Do not include Markdown. Use only HTML formatting suitable for Blogger.
     if (!rawText) {
       throw new Error("No content returned from AI.");
     }
+
+    console.log("rawText", rawText);
 
     // Attempt to extract JSON from AI response
     const jsonStart = rawText.indexOf("{");
