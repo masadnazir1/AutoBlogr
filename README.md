@@ -1,6 +1,3 @@
-Here’s a full, professional `README.md` for your **AutoBlogr** project:
-
-````markdown
 # AutoBlogr
 
 AutoBlogr is a Node.js application that automatically generates SEO-friendly blog posts based on trending keywords and publishes them to Blogger. It leverages AI for content creation, fetches relevant images from Unsplash, and posts fully formatted blogs with labels and hashtags. The automation runs daily at scheduled times, ensuring fresh content without manual effort.
@@ -38,6 +35,7 @@ AutoBlogr is a Node.js application that automatically generates SEO-friendly blo
 git clone https://github.com/yourusername/AutoBlogr.git
 cd AutoBlogr
 ```
+
 ````
 
 2. Install dependencies:
@@ -152,4 +150,5 @@ MIT License
 - Ensure OAuth credentials are valid and refresh tokens are correctly set.
 - You can customize the number of blogs per day or schedule by modifying the cron expression in `index.js`.
 
----
+
+````
