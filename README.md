@@ -48,12 +48,13 @@ npm install
 
 ```env
 PORT=3000
-GOOGLE_CLIENT_ID=your_google_client_id
-GOOGLE_CLIENT_SECRET=your_google_client_secret
-GOOGLE_REDIRECT_URI=http://localhost:3000/oauth2callback
+CLIENT_ID=your_google_client_id
+CLIENT_SECRET=your_google_client_secret
+REDIRECT_URI=http://localhost:3000/oauth2callback
 BLOGGER_BLOG_ID=your_blogger_blog_id
 GEMINI_API_KEY=your_gemini_api_key
 UNSPLASH_ACCESS_KEY=your_unsplash_access_key
+REFRESH_TOKEN=generate_using_the_getToken.js
 ```
 
 4. Enable Blogger API in your Google Cloud project:
@@ -80,18 +81,21 @@ npm start
 ```
 AutoBlogr/
 ├── src/
-│   ├── services/
-│   │   ├── llmService.js       # AI content generation
-│   │   ├── trendsService.js    # Fetch trending keywords
-│   │   ├── unsplashService.js  # Fetch relevant images
-│   │   ├── blogSuggestionService.js # Pick best blog suggestion
-│   │   └── bloggerService.js   # Post blog to Blogger
-│   ├── utils/
-│   └── models/
-├── .env.example
-├── .gitignore
+│ ├── services/
+│ │ ├── bloggerService.js # Post blog to Blogger
+│ │ ├── blogSuggestionService.js # Pick best blog suggestion
+│ │ ├── llmService.js # AI content generation
+│ │ ├── trendsService.js # Fetch trending keywords
+│ │ └── unsplashService.js # Fetch relevant images
+├── .env # Environment variables
+├── .env.sample # Sample environment file
+├── .gitignore # Git ignore file
+├── client_secret_94901342495-7uf7befnorpbeefksac37rq8sb6.apps.googleusercontent.com.json
+├── getToken.js # OAuth token utility
+├── index.js # Main server entry
+├── package-lock.json
 ├── package.json
-└── index.js                     # Main server entry
+└── README.md
 ```
 
 ---
