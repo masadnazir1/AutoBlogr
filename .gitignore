@@ -1,0 +1,43 @@
+# Environment files
+.env
+/.env
+./.env
+
+# Node modules
+/node_modules
+/.node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Google API client secret files
+client_secret_*.json
+./client_secret_*.json
+/.client_secret_*.json
+
+# Build directories
+/dist
+/build
+/out
+/temp
+/tmp
+
+# Misc
+*.bak
+*.swp
